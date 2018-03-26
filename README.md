@@ -1,2 +1,2 @@
-# music_vue
-采用vue开发的音乐播放器
+#music_vue
+基于VUE的音乐播放器
