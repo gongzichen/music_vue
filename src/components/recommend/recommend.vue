@@ -1,7 +1,7 @@
 <template>
   <div class="recommend" ref="recommend">
     <scroll ref="scroll" class="recommend-content" :data="discList">
-      <div>
+      <div class="scroll">
         <div class="swiper-container">
           <slider :solder=recommends></slider>
         </div>
@@ -94,10 +94,15 @@ export default {
       position: relative;
     }
     .recommend-list {
-      height: 65px;
+      
+     
+      .list-title {
+          text-align: center;
+           height: 65px;
       line-height: 65px;
       font-size: $font-size-medium;
       color: $color-theme;
+        }
       .item {
         display: flex;
         box-sizing: border-box;

@@ -3,10 +3,8 @@
     <slot></slot>
   </div>
 </template>
-
 <script type="text/ecmascript-6">
   import BScroll from 'better-scroll'
-
   export default {
     props: {
       probeType: {
@@ -40,7 +38,6 @@
     },
     mounted() {
       setTimeout(() => {
-        console.log('初始化scroll')
         this._initScroll()
       }, 20)
     },
@@ -59,7 +56,6 @@
             me.$emit('scroll', pos)
           })
         }
-
         if (this.pullup) {
           this.scroll.on('scrollEnd', () => {
             if (this.scroll.y <= (this.scroll.maxScrollY + 50)) {
@@ -67,7 +63,6 @@
             }
           })
         }
-
         if (this.beforeScroll) {
           this.scroll.on('beforeScrollStart', () => {
             this.$emit('beforeScroll')

@@ -12,6 +12,18 @@ export default new Router({
     {
       path: '/recommend',
       component: () => import('components/recommend/recommend')
+    },
+    {
+      path: '/singer',
+      component: () => import('components/singer/singer')
+    },
+    {
+      path: '/rank',
+      component: () => import('components/rank/rank')
+    },
+    {
+      path: '/search',
+      component: () => import('components/search/search')
     }
   ]
 })
