@@ -2,7 +2,6 @@
   <div id="app">
     <m-header></m-header>
     <tab></tab>
-    <!-- 缓存组件 -->
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -19,6 +18,11 @@
       MHeader,
       Tab
       // Player
+    },
+    data () {
+      return {
+
+      }
     }
   }
 </script>

@@ -13,8 +13,8 @@ export default {
 }
 </script>
 
-<style lang="sass">
-  @import "~common/scss/variable"
+<style lang="scss">
+  @import "~common/scss/variable";
   .loading {
     width: 100%;
     text-align: center;

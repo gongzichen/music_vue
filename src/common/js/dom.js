@@ -7,7 +7,7 @@ export function hasClass (el, className) {
 }
 
 export function addClass(el, className) {
-  if (hasClass(elclassName)) {
+  if (hasClass(className)) {
     return
   }
   let newClass= el.className.split(' ')

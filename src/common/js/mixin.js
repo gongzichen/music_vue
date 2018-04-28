@@ -3,7 +3,7 @@ import { playMode } from 'common/js/config'
 
 export const playlistMixin = {
   computed: {
-    ...mapGetters(['playlist'])
+    // ...mapGetters(['playlist'])
   },
   mounted () {
     this.handlePlaylist(this.playlist)

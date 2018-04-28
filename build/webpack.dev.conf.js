@@ -7,6 +7,13 @@ const baseWebpackConfig = require('./webpack.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
+// 后端代理
+const express = require('express')
+const axios = require('axios')
+const app = express()
+const apiRoutes = express.Router()
+app.use('/api', apiRoutes)
+
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
